@@ -10,32 +10,35 @@ function AppHeader() {
   return (
     <nav className={`${styles['app-header']}`}>
       <div className={`${styles['content']}`}>
-        <div className={`${styles['navigation']}`}>
-          <div className={`${styles['navigation-link-active']}`}>
-            <BurgerIcon />
-            <a
-              className={'text text_type_main-default text_color_primary'}
-              href="#"
-            >
-              Конструктор
-            </a>
-          </div>
-          <div className={`${styles['navigation-link-inactive']}`}>
-            <ListIcon />
-            <a
-              className={'text text_type_main-default text_color_inactive'}
-              href="#"
-            >
-              Лента заказов
-            </a>
-          </div>
+        <div
+          className={`pt-4 pl-5 pr-5 pb-4 mt-4 ${styles['constructor-container']}`}
+        >
+          <BurgerIcon className={`${styles.icon}`} />
+          <a
+            className={'text text_type_main-default text_color_primary'}
+            href="#"
+          >
+            Конструктор
+          </a>
+        </div>
+
+        <div
+          className={`pt-4 pl-5 pr-5 pb-4 ml-2 mt-4 ${styles['element-order-feed']}`}
+        >
+          <ListIcon className={`${styles.icon}`} />
+          <a
+            className={'text text_type_main-default text_color_inactive'}
+            href="#"
+          >
+            Лента заказов
+          </a>
         </div>
 
         <div className={`${styles.logo}`}>
           <Logo />
         </div>
 
-        <div className={`${styles['navigation-link-inactive1']}`}>
+        {/* <div className={`${styles['navigation-link-inactive1']}`}>
           <ProfileIcon />
           <a
             className={`text text_type_main-default text_color_inactive`}
@@ -43,7 +46,7 @@ function AppHeader() {
           >
             Личный кабинет
           </a>
-        </div>
+        </div> */}
       </div>
     </nav>
   );
