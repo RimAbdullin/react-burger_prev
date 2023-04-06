@@ -1,4 +1,5 @@
 import AppHeader from '../app-header/app-header';
+import BurgerIngredients from '../burger-ingredients/burger-ingredients';
 
 function App() {
   return (
@@ -7,7 +8,9 @@ function App() {
         <AppHeader />
       </header>
       <main>
-        <section className="App"></section>
+        <section className="App">
+          <BurgerIngredients />
+        </section>
       </main>
     </>
   );

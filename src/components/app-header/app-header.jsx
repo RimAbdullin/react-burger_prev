@@ -9,9 +9,11 @@ import styles from './app-header.module.css';
 function AppHeader() {
   return (
     <nav className={`${styles['app-header']}`}>
-      <div className={`${styles['content']}`}>
-        <div className={`${styles['constructor-container']}`}>
-          <BurgerIcon className={`${styles.icon}`} />
+      <div className={`mt-4 mb-4 ${styles['content']}`}>
+        <div
+          className={`${styles['constructor-container']} ${styles['border-round']} ${styles['flex-container']}`}
+        >
+          <BurgerIcon />
           <a
             className={`pl-2 text text_type_main-default text_color_primary`}
             href="#"
@@ -20,8 +22,10 @@ function AppHeader() {
           </a>
         </div>
 
-        <div className={`${styles['order-feed-container']}`}>
-          <ListIcon className={`${styles.icon}`} />
+        <div
+          className={`ml-2 ${styles['order-feed-container']} ${styles['border-round']} ${styles['flex-container']}`}
+        >
+          <ListIcon />
           <a
             className={'pl-2 text text_type_main-default text_color_inactive'}
             href="#"
@@ -30,12 +34,14 @@ function AppHeader() {
           </a>
         </div>
 
-        <div className={`${styles.logo}`}>
+        <div className={`mt-2 mb-2 ${styles.logo}`}>
           <Logo />
         </div>
 
-        <div className={`${styles['profile-container']}`}>
-          <ProfileIcon className={`${styles.icon}`} />
+        <div
+          className={`${styles['profile-container']} ${styles['border-round']} ${styles['flex-container']}`}
+        >
+          <ProfileIcon />
           <a
             className={`pl-2 text text_type_main-default text_color_inactive`}
             href="#"

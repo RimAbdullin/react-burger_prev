@@ -1,0 +1,89 @@
+.burger-ingredients {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  flex: none;
+
+  position: absolute;
+  width: 600px;
+  height: 912px;
+  top: 128px;
+  left: 380px;
+
+  background: #131316;
+  border: 2px solid #4c4cff;
+}
+
+.title {
+  position: absolute;
+  width: 600px;
+  height: 40px;
+  left: 0px;
+  /* top: 40px; */
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: none;
+
+  position: absolute;
+  width: 1280px;
+  height: 56px;
+  left: 320px;
+}
+
+.constructor-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+
+  width: 178px;
+  height: 56px;
+}
+
+.order-feed-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+
+  width: 197px;
+  height: 56px;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+
+  margin-left: auto;
+  width: 207px;
+  height: 56px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  position: absolute;
+  width: 289.15px;
+  height: 40px;
+  left: 495px;
+}
