@@ -1,8 +1,7 @@
 .burger-ingredients {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  /* align-items: center; */
-  flex: none;
+  flex: none; */
 
   position: absolute;
   width: 600px;
@@ -15,11 +14,8 @@
 }
 
 .title {
-  position: absolute;
   width: 600px;
   height: 40px;
-  left: 0px;
-  /* top: 40px; */
 }
 
 .content {

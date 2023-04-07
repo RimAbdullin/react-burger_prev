@@ -1,5 +1,6 @@
-import MyTab from '../my-tab/my-tab';
 import styles from './burger-ingredients.module.css';
+import Ingredients from '../ingredients/ingredients';
+import Tabs from '../tabs/tabs';
 
 function BurgerIngredients() {
   return (
@@ -9,9 +10,8 @@ function BurgerIngredients() {
       >
         Соберите бургер
       </div>
-      <div>
-        <MyTab />
-      </div>
+      <Tabs />
+      <Ingredients />
     </section>
   );
 }
