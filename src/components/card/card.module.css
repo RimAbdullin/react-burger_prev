@@ -4,9 +4,52 @@
   align-items: center;
   flex: none;
 
-  /* padding: 0px;
-  gap: 32px; */
-
   width: 272px;
   height: 208px;
+}
+
+.illustration {
+  width: 240px;
+  height: 120px;
+
+  position: relative;
+  top: -1px;
+}
+
+.price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: none;
+
+  gap: 8px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: none;
+
+  border-left: 1px dashed #4c4cff;
+}
+
+.name {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+  flex: none;
+
+  width: 272px;
+  height: 48px;
+
+  background: #131316;
+  border: 1px dashed #4c4cff;
+  padding-bottom: 5px;
+}
+
+.card-border {
+  box-sizing: border-box;
+  border: 1px dashed #4c4cff;
 }
