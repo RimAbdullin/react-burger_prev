@@ -30,9 +30,7 @@ const Ingredients = () => {
 
   return (
     <section className={`custom-scroll ${styles['ingredients']}`}>
-      <div
-        className={`mt-10 text text_type_main-medium text_color_primary ${styles['title']}`}
-      >
+      <div className={`mt-10 text text_type_main-medium text_color_primary`}>
         <a id="rolls">Булки</a>
       </div>
       {state.error && <h1>Данные не найдены.</h1>}

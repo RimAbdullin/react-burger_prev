@@ -1,9 +1,3 @@
-*,
-*::before,
-*::after {
-  box-sizing: content-box;
-}
-
 .card-ingredients {
   display: flex;
   flex-direction: column;
@@ -14,14 +8,27 @@
   height: 208px;
 
   box-sizing: border-box;
+
+  position: relative;
 }
 
 .illustration {
   width: 240px;
   height: 120px;
 
-  /* position: relative;
-  top: -1px; */
+  margin-top: -1px;
+}
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: none;
+
+  /* position: absolute;
+  width: 32px;
+  height: 32px;
+  right: 0px; */
 }
 
 .price {
@@ -50,11 +57,10 @@
   flex: none;
 
   width: 270px;
-  height: 48px;
+  height: 52px;
 
   background: #131316;
   border: 1px dashed #4c4cff;
-  /* padding-bottom: 5px; */
 }
 
 .card-border {

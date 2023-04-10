@@ -1,13 +1,21 @@
 import styles from './card.module.css';
-import { CurrencyIcon } from '@ya.praktikum/react-developer-burger-ui-components';
+import {
+  CurrencyIcon,
+  Counter,
+} from '@ya.praktikum/react-developer-burger-ui-components';
 
 function CardIngredients(props) {
   const data = props.children;
 
   return (
-    <section
+    <div
       className={`ml-4 mb-10 mt-6 ${styles['card-ingredients']} ${styles['card-border']}`}
     >
+      <Counter
+        count={9}
+        size="default"
+        extraClass={`m-0 ${styles['counter']} ${styles['card-border']}`}
+      />
       <div
         className={`mr-4 ml-4 ${styles['illustration']} ${styles['card-border']}`}
       >
@@ -22,9 +30,14 @@ function CardIngredients(props) {
         </div>
       </div>
       <div className={`${styles.name}`}>
-        <span className="text_type_main-default">{data.name}</span>
+        <span
+          className={`text_type_main-default`}
+          style={{ textAlign: 'center' }}
+        >
+          {data.name}
+        </span>
       </div>
-    </section>
+    </div>
   );
 }
 
