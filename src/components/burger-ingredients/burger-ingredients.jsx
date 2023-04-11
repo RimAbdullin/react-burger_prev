@@ -1,5 +1,6 @@
 import styles from './burger-ingredients.module.css';
 import Tabs from '../tabs/tabs';
+import IngredientsList from '../burger-ingredients/list/list';
 
 function BurgerIngredients() {
   return (

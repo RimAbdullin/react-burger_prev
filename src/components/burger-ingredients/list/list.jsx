@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import CardIngredients from '../card/card';
-import styles from './ingredients-list.module.css';
+import styles from './list.module.css';
 
 const IngredientsList = () => {
   const [state, setState] = useState({
@@ -42,7 +42,7 @@ const IngredientsList = () => {
   }
 
   return (
-    <section className={`custom-scroll ${styles['ingredients']}`}>
+    <section className={`custom-scroll ${styles['container']}`}>
       {!state.loading && (
         <>
           <div
