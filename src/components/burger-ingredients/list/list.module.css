@@ -4,5 +4,6 @@
   flex-wrap: wrap;
   flex: none;
 
+  gap: 8px;
   width: 600px;
 }
