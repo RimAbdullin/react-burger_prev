@@ -1,5 +1,5 @@
 import AppHeader from '../app-header/app-header';
-import BurgerIngredients from '../burger-ingredients/burger-ingredients';
+import BurgerIngredients from '../burger-ingredients/container/burger-ingredients';
 
 function App() {
   return (

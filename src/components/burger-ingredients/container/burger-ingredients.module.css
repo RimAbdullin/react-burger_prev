@@ -1,4 +1,4 @@
-.burger-ingredients {
+.container {
   position: absolute;
   width: 600px;
   height: 912px;
@@ -12,4 +12,13 @@
 .title {
   width: 600px;
   height: 40px;
+}
+
+.scroll-area {
+  width: 600px;
+  height: 756px;
+  left: 0px;
+  overflow-y: scroll;
+
+  border-radius: 0px;
 }
