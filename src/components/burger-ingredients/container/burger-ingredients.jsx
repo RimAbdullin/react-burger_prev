@@ -38,6 +38,11 @@ function BurgerIngredients() {
     getBurgerData();
   }, []);
 
+  const click = (v) => {
+    const elem = document.getElementById(v);
+    elem.scrollIntoView();
+  };
+
   if (state.error) {
     return <h1>Данные не найдены.</h1>;
   }
@@ -52,11 +57,19 @@ function BurgerIngredients() {
           >
             Соберите бургер
           </div>
-          <Tabs />
+          <Tabs click={click} />
           <section className={`custom-scroll ${styles['scroll-area']}`}>
-            <IngredientsList title={'Булки'} data={state.bun} />
-            <IngredientsList title={'Соусы'} data={state.sauce} />
-            <IngredientsList title={'Начинка'} data={state.main} />
+            <IngredientsList id={'id-bun'} title={'Булки'} data={state.bun} />
+            <IngredientsList
+              id={'id-sauce'}
+              title={'Соусы'}
+              data={state.sauce}
+            />
+            <IngredientsList
+              id={'id-main'}
+              title={'Начинка'}
+              data={state.main}
+            />
           </section>
         </>
       )}
