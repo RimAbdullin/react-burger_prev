@@ -1,18 +1,17 @@
 import { Tab } from '@ya.praktikum/react-developer-burger-ui-components';
 import React from 'react';
-import styles from './tabs.module.css';
+import styles from './TabsBurgerIngredients.module.css';
 
-function Tabs(props) {
+function TabsBurgerIngredients(props) {
   const [current, setCurrent] = React.useState('id-bun');
 
   const scrollElement = (v) => {
-    console.log(v);
     props.click(v);
     setCurrent(v);
   };
 
   return (
-    <div className={`text text_type_main-default ${styles.tabs}`}>
+    <div className={`text text_type_main-default ${styles.Tabs}`}>
       <Tab value="id-bun" active={current === 'id-bun'} onClick={scrollElement}>
         Булки
       </Tab>
@@ -34,4 +33,4 @@ function Tabs(props) {
   );
 }
 
-export default Tabs;
+export default TabsBurgerIngredients;

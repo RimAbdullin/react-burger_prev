@@ -1,7 +1,7 @@
-import styles from './list.module.css';
-import CardIngredients from '../card/card';
+import styles from './ListBurgerIngredients.module.css';
+import CardBurgerIngredients from '../card/CardBurgerIngredients';
 
-const IngredientsList = (props) => {
+const ListBurgerIngredients = (props) => {
   const modal = () => {
     console.log('123');
     // console.log(e.target.getAttribute('key'));
@@ -12,15 +12,15 @@ const IngredientsList = (props) => {
       <div className={`mt-10 text text_type_main-medium text_color_primary`}>
         <a id={props.id}>{props.title}</a>
       </div>
-      <div className={styles.column}>
+      <div className={styles.Column}>
         {props.data.map((item) => (
-          <CardIngredients key={item._id} onClick={modal}>
+          <CardBurgerIngredients key={item._id} onClick={modal}>
             {item}
-          </CardIngredients>
+          </CardBurgerIngredients>
         ))}
       </div>
     </section>
   );
 };
 
-export default IngredientsList;
+export default ListBurgerIngredients;

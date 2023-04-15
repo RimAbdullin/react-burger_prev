@@ -1,4 +1,4 @@
-.app-header {
+.App-header {
   position: absolute;
   width: 1920px;
   height: 88px;
@@ -12,7 +12,7 @@
   border: 2px solid #4c4cff;
 }
 
-.content {
+.Content {
   display: flex;
   flex-direction: row;
   flex: none;
@@ -25,7 +25,7 @@
   top: 0px;
 }
 
-.flex-container {
+.Flex-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -33,17 +33,17 @@
   flex: none;
 }
 
-.constructor-container {
+.Constructor-container {
   width: 178px;
   height: 56px;
 }
 
-.order-feed-container {
+.Order-feed-container {
   width: 197px;
   height: 56px;
 }
 
-.profile-container {
+.Profile-container {
   position: absolute;
   left: 1073px;
   width: 207px;
@@ -56,13 +56,13 @@ a {
   text-decoration: none;
 }
 
-.border-round {
+.Border-round {
   box-sizing: border-box;
   border: 1px dashed #4c4cff;
   border-radius: 40px;
 }
 
-.logo {
+.Logo {
   display: flex;
   flex-direction: row;
   align-items: center;

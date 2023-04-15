@@ -4,14 +4,14 @@ import {
   Logo,
   ProfileIcon,
 } from '@ya.praktikum/react-developer-burger-ui-components';
-import styles from './app-header.module.css';
+import styles from './App-header.module.css';
 
 function AppHeader() {
   return (
-    <nav className={`${styles['app-header']}`}>
-      <div className={`mt-4 mb-4 ${styles['content']}`}>
+    <nav className={`${styles['App-header']}`}>
+      <div className={`mt-4 mb-4 ${styles['Content']}`}>
         <div
-          className={`${styles['constructor-container']} ${styles['border-round']} ${styles['flex-container']}`}
+          className={`${styles['Constructor-container']} ${styles['Border-round']} ${styles['Flex-container']}`}
         >
           <BurgerIcon />
           <a
@@ -23,7 +23,7 @@ function AppHeader() {
         </div>
 
         <div
-          className={`ml-2 ${styles['order-feed-container']} ${styles['border-round']} ${styles['flex-container']}`}
+          className={`ml-2 ${styles['Order-feed-container']} ${styles['Border-round']} ${styles['Flex-container']}`}
         >
           <ListIcon />
           <a
@@ -34,12 +34,12 @@ function AppHeader() {
           </a>
         </div>
 
-        <div className={`mt-2 mb-2 ${styles.logo}`}>
+        <div className={`mt-2 mb-2 ${styles.Logo}`}>
           <Logo />
         </div>
 
         <div
-          className={`${styles['profile-container']} ${styles['border-round']} ${styles['flex-container']}`}
+          className={`${styles['Profile-container']} ${styles['Border-round']} ${styles['Flex-container']}`}
         >
           <ProfileIcon />
           <a

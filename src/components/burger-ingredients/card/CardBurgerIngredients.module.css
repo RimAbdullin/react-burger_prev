@@ -1,4 +1,4 @@
-.card-ingredients {
+.Card-ingredients {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,16 +10,18 @@
   box-sizing: border-box;
 
   position: relative;
+
+  cursor: pointer;
 }
 
-.illustration {
+.Illustration {
   width: 240px;
   height: 120px;
 
   margin-top: -1px;
 }
 
-.counter {
+.Counter {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,7 +33,7 @@
   right: 0px; */
 }
 
-.price {
+.Price {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -40,7 +42,7 @@
   gap: 8px;
 }
 
-.icon {
+.Icon {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -49,7 +51,7 @@
   border-left: 1px dashed #4c4cff;
 }
 
-.name {
+.Name {
   display: flex;
   flex-direction: row;
   align-items: start;
@@ -63,7 +65,6 @@
   border: 1px dashed #4c4cff;
 }
 
-.card-border {
-  /* box-sizing: border-box; */
+.Card-border {
   border: 1px dashed #4c4cff;
 }

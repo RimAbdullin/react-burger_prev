@@ -1,14 +1,22 @@
-import AppHeader from '../app-header/app-header';
-import BurgerIngredients from '../burger-ingredients/container/burger-ingredients';
+import { useState } from 'react';
+import AppHeader from '../app-header/AppHeader';
+import BurgerIngredients from '../burger-ingredients/container/BurgerIngredients';
+import Modal from '../modal/Modal';
 
 function App() {
+  const [modal, setModal] = useState(false);
+
   return (
     <>
+      <button onClick={() => setModal(true)}>Открыть диалоговое окно</button>
+      <Modal visible={modal} setVisible={setModal}>
+        123
+      </Modal>
       <header>
         <AppHeader />
       </header>
       <main>
-        <section className="App">
+        <section>
           <BurgerIngredients />
         </section>
       </main>
